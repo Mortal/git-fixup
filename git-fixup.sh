@@ -102,4 +102,4 @@ if [ -n "$filename" -a ${#ranges[@]} -gt 0 ]; then
 	handle_file "$filename" "${ranges[@]}"
 fi
 # echo "Best commit: '$best_commit'"
-git commit -m "fixup! $best_commit" -m "Committed using git-fixup.sh"
+git commit -m "fixup! $best_summary" -m "This is a fixup to commit $best_commit" -m "Committed using git-fixup.sh"
